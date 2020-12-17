@@ -10,8 +10,18 @@ $("#shoot").click(function(){
   $("#userChoice").text(choice);
  computer = Math.random();
   $(".test").text(computer);
-  // winner = 
-  
+  if(computer > .6){
+    $("#computerChoice").text("Rock");
+    
+  }
+  else if(.3 < computer < .6 ){
+    $("#computerChoice").text("Paper");
+    
+  }
+  else{
+    $("#computerChoice").text("Scissors");
+    
+  }
 });
 
 
@@ -19,4 +29,6 @@ let winner = "";
 
 
 let computer = 0;
+
+
 
